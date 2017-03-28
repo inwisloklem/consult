@@ -199,14 +199,19 @@ button.btn {
   display: flex;
   flex-direction: column;
 }
+.consult-form__inner .consult-form__input {
+  width: 100%;
+}
 @media (min-width: 700px) {
   .consult-form__inner {
     flex-direction: row;
     justify-content: space-between;
   }
+  .consult-form__inner .consult-form__input {
+    width: 30%;
+  }
 }
 .consult-form__input {
-  flex-basis: 30%;
   box-sizing: border-box;
   margin-bottom: 20px;
   padding: 14px;
@@ -501,7 +506,7 @@ button.btn {
     padding: 0;
     background-color: transparent;
     background-image: url("../img/bg-order-t.png");
-    background-size: cover;
+    background-size: 100% 551px;
     background-position: center top;
     background-repeat: no-repeat;
   }
@@ -600,7 +605,6 @@ button.btn {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  flex-basis: 100%;
   list-style: none;
 }
 @media (min-width: 700px) {
@@ -620,6 +624,7 @@ button.btn {
   padding-bottom: 30px;
   padding-left: 95px;
   background-image: url("../img/image-profit-list.png");
+  background-position: 5px 0;
   background-repeat: no-repeat;
 }
 @media (min-width: 700px) and (max-width: 1169px) {
