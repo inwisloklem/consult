@@ -1,0 +1,53 @@
+.features
+  padding-top 40px
+
+  &__title
+    margin-bottom 60px
+    text-align center
+    font(2.5em, 1, 400, uppercase)
+    
+    @media $tablet-desktop
+      font(3em)
+
+  &__list
+    list-style none
+
+    display flex
+    flex-direction row
+    flex-wrap wrap
+
+    @media $desktop
+      padding 0 95px
+
+  &__item
+    position relative
+    box-sizing border-box
+    margin-bottom 50px
+    padding-left 95px
+
+    @media $tablet-desktop
+      flex-basis 50%
+    
+  &__icon
+    position absolute
+    top -5px
+    
+    &--1
+      left 10px
+      
+    &--2
+      left 14px
+      
+    &--3
+      left 18px
+      
+    &--4
+      left 22px
+
+  &__name
+    margin-bottom 10px
+    max-width 240px
+    font(1.5em, 1.2, 700)
+
+  &__text
+    font(1em, 1.2, 400)

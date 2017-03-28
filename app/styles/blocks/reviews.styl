@@ -1,0 +1,40 @@
+.reviews
+  padding 40px 0
+
+  &__title
+    margin-bottom 40px
+    text-align center
+    font(3em, 1, 400, uppercase)
+    
+  &__block
+    margin-bottom 10px
+    display flex
+    flex-direction row
+    
+    @media $tablet-desktop
+      margin-bottom 30px
+    
+  &__image
+    display none
+    margin-right 30px
+
+    @media $tablet-desktop
+      display block
+      
+  &__inner
+    display flex
+    flex-direction column-reverse
+    
+    @media $tablet-desktop
+      flex-direction column
+
+  &__name
+    margin-bottom 20px
+    font(1.25em, 1.2, 700)
+
+  &__text
+    margin-bottom 10px
+    font(1.125em, 1.2, 400)
+    
+    @media $tablet-desktop
+      margin-bottom 0

@@ -1,0 +1,63 @@
+.profit
+  padding-top 80px
+
+  color $white
+
+  background-image url("../img/bg-profit.jpg")
+  background-size cover
+  background-position center top
+  background-repeat no-repeat
+  
+  &__title
+    margin auto
+    margin-bottom 40px
+    text-align center
+    font(2.5em, 1, 400, uppercase)
+    
+    @media $tablet-desktop
+      width 730px
+      font(3em)
+
+  &__wrapper
+    display flex
+    flex-direction column
+
+    @media $tablet-desktop
+      flex-direction row
+
+  &__list
+    box-sizing border-box
+    display flex
+    flex-direction column
+    justify-content space-around
+    flex-basis 100%
+    list-style none
+
+    @media $tablet-desktop
+      flex-basis 50%
+
+    @media $desktop
+      padding-left 95px
+
+  &__item
+    position relative
+    margin-bottom 40px
+    padding-top 14px
+    padding-bottom 30px
+    padding-left 95px
+
+    background-image url("../img/image-profit-list.png")
+    background-repeat no-repeat
+
+    @media $tablet
+      margin-bottom 0
+
+    @media $desktop
+      padding-top 10px
+      margin-bottom 50px
+
+  &__consult-form
+    margin auto
+    
+    @media $tablet-desktop
+      margin-left auto

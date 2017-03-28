@@ -1,0 +1,58 @@
+.order-t
+  padding 40px 0
+  position relative
+  top -70px
+  color $white
+  background-color $persian-green
+  text-align center
+
+  @media $tablet
+    padding 40px
+
+  @media $desktop
+    padding 0
+    background-color transparent
+    background-image url("../img/bg-order-t.png")
+    background-size cover
+    background-position center top
+    background-repeat no-repeat
+
+  &__wrapper
+    display flex
+    flex-direction column
+    
+    @media $desktop
+      flex-direction row
+
+  &__block
+    @media $desktop
+      padding 100px 80px
+      flex-basis 50%
+
+      &--right
+        text-align right
+
+  &__title
+    display none
+    
+    @media $desktop
+      display block
+      margin-bottom 40px
+      font(6.25em, 0.8, 400, uppercase)
+
+  &__diagnosis-form
+    @media $tablet
+      margin auto
+      max-width 450px
+
+  &__text
+    margin auto
+    margin-bottom 10px
+    font(1.625em, 1.2, 300, uppercase)
+
+    @media $tablet
+      margin-bottom 40px
+
+    @media $desktop
+      margin-bottom 40px
+      max-width 700px

@@ -1,0 +1,48 @@
+.consult
+  padding 30px 0
+
+  @media $tablet-desktop
+    background-image url("../img/bg-consult.jpg")
+    background-size cover
+    background-position center
+    background-repeat no-repeat
+
+  &__logo
+    margin-bottom 40px
+    display flex
+    justify-content center
+
+    @media $desktop
+      display block
+      margin-bottom 100px
+
+  &__title
+    text-align center
+    font(2.5em, 1, 700, uppercase)
+
+    @media $tablet-desktop
+      font(4.625em, 1, 700, uppercase)
+      
+    @media $desktop
+      text-align left
+
+    &:last-of-type
+      font(1.5em, 1.2, 400, uppercase)
+
+      @media $tablet-desktop
+        font(2.75em, 1.4, 700, uppercase)
+
+  &__hgroup
+    margin-bottom 40px
+
+    @media $tablet-desktop
+      margin-bottom 70px
+
+  &__btn
+    margin auto
+    max-width 330px
+    margin-bottom 80px
+
+    @media $desktop
+      margin 0
+      margin-bottom 80px

@@ -1,0 +1,52 @@
+.about
+  margin-top -10px
+  padding-bottom 40px
+
+  &__title
+    margin-bottom 60px
+    text-align center
+    font(2.5em, 1, 400, uppercase)
+    
+    @media $tablet-desktop
+      font(3em)
+
+  &__num
+    font(4.5em, 1, 400, uppercase)
+
+  &__text
+    font(1.125em, 1, 400)
+
+  &__list
+    display flex
+    flex-direction column
+    list-style none
+
+    @media $tablet-desktop
+      flex-direction row
+
+    @media $tablet
+      justify-content space-between
+
+    @media $desktop
+      justify-content space-around
+
+  &__item
+    box-sizing border-box
+    margin-bottom 40px
+    text-align center
+    
+    @media $tablet-desktop
+      margin-bottom 0
+      background-image url("../img/bg-about-block.svg")
+      background-size cover
+      background-position top center
+
+    @media $tablet
+      padding-top 30px
+      flex-basis 160px
+      height 169px
+
+    @media $desktop
+      padding-top 50px
+      flex-basis 203px
+      height 215px

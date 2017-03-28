@@ -1,0 +1,154 @@
+doctype html
+
+html(lang = "ru")
+  include parts/head.pug
+
+  body
+    include parts/svg-sprite.pug
+
+    header
+      section.consult
+        .container
+          .consult__logo
+            img(src = "img/image-logo.png", width = 229, height = 73, alt = "Доктор Борменталь")
+
+          .consult__hgroup
+            h2.consult__title Бесплатная консультация
+            h2.consult__title Диетолога по телефону
+
+          a.btn.btn--type-1.consult__btn(href = "#consult") Получить консультацию
+
+    main
+      section.order-t
+        .container
+          .order-t__wrapper
+            .order-t__block.order-t__block--right
+              h2.order-t__title Акция!
+              p.order-t__text
+                | Бесплатная консультация диетолога и диагностика организма в центре снижения веса
+
+            .order-t__block
+              p.order-t__text
+                | #[span.hide Получи бесплатную диагностику организма в центре снижения веса]
+
+              form.diagnosis-form.order-t__diagnosis-form(method = "post", action = "#")
+                input.diagnosis-form__input(type = "text", name = "name", placeholder = "Ваше имя")
+                input.diagnosis-form__input(type = "tel", name = "phone", placeholder = "Ваш телефон")
+
+                button.btn.btn--type-2.diagnosis-form__btn(type = "submit") Получить диагностику
+
+      section.about
+        .container
+          h2.about__title #[strong Похудение] в цифрах
+
+          ul.about__list
+            li.about__item
+              .about__num 128
+              .about__text Получивших консультацию
+            li.about__item
+              .about__num 256
+              .about__text Сброшенных килограммов
+            li.about__item
+              .about__num 1024
+              .about__text Всего часов консультаций
+            li.about__item
+              .about__num 2048
+              .about__text Минус сантиметров в&nbsp;талии
+
+      section.features
+        .container
+          h2.features__title #[strong Преимущества] телефонной консультации
+
+          ul.features__list
+            li.features__item
+              svg.features__icon.features__icon--1(width = 63, height = 63)
+                use(xlink:href = "#icon-features-1")
+              .features__name Консультация не&nbsp;выходя из дома
+              .features__text Находясь в домашней обстановке и не видя собеседника намного легче обсудить проблему
+            li.features__item
+              svg.features__icon.features__icon--2(width = 60, height = 72)
+                use(xlink:href = "#icon-features-2")
+              .features__name Экономия вашего времени
+              .features__text Не нужно ехать на другой конец города или стоять в пробках. Самая экономная по времени консультация
+            li.features__item
+              svg.features__icon.features__icon--3(width = 54, height = 67)
+                use(xlink:href = "#icon-features-3")
+              .features__name Вы получаете подарок!
+              .features__text А ещё мы дарим Вам бесплатную диагностику организма в центре «Доктор Борменталь»!
+            li.features__item
+              svg.features__icon.features__icon--4(width = 50, height = 83)
+                use(xlink:href = "#icon-features-4")
+              .features__name Сертифицированные специалисты
+              .features__text Вас консультируют только практикующие диетологи, прошедшие сертификацию
+
+      section.profit
+        h2.profit__title #[strong Плюсы] индивидуальной программы #[strong питания]
+
+        .container
+          .profit__wrapper
+            ul.profit__list
+              li.profit__item
+                | Программа рассчитывается не «по&nbsp;среднему», а только на основании результата ваших анализов
+              li.profit__item
+                | Полностью блокируются скрытые причины набора веса, присущие именно вашему организму
+              li.profit__item
+                | Вы не ограничиваете себя в любимых продуктах, но при этом должны будете четко соблюдать рекомендации нашего диетолога
+
+            form.consult-form.profit__consult-form(method = "post", action = "#")
+              h2.consult-form__title Получи консультацию #[span.consult-form__important прямо сейчас!]
+
+              .consult-form__wrapper
+                input.consult-form__input(type = "text", name = "name", placeholder = "Ваше имя")
+                input.consult-form__input(type = "tel", name = "phone", placeholder = "Ваш телефон")
+
+                .consult-form__inner
+                  input.consult-form__input(type = "text", name = "weight", placeholder = "Вес")
+                  input.consult-form__input(type = "text", name = "height", placeholder = "Рост")
+                  input.consult-form__input(type = "text", name = "age", placeholder = "Возраст")
+
+                button.btn.btn--type-1.consult-form__btn(type = "submit") Получить консультацию
+
+      section.reviews
+        .container
+          h2.reviews__title Отзывы
+
+          .reviews__block
+            .reviews__image
+              img(src = "img/image-reviews-1.jpg", width = 160, height = 160)
+            .reviews__inner
+              .reviews__name Ольга, Санкт-Петербург
+              .reviews__text После консультации ко мне пришло понимание того, что в жизни можно получать удовольствие не только от еды, но и другими способами. Основная задача, которую я ставлю теперь перед собой — это поиск новых способов удовольствия. Я даже поспорила со своим мужчиной, что если скину 20 кг, то он мне купит норковую шубу).
+          .reviews__block
+            .reviews__image
+              img(src = "img/image-reviews-2.jpg", width = 160, height = 160)
+            .reviews__inner
+              .reviews__name Ксения, Москва
+              .reviews__text Мне очень понравился сам процесс снижения веса. Особенно меня впечатлили дыхательные техники, благодаря которым я научилась слушать и слышать себя. Раньше я считала, что у меня нет силы воли вообще. Но в процессе тренингов я поняла, что я довольно сильный человек, и обрела уверенность в себе. А ещё на группе я нашла подругу, с которой мы делились проблемами, рецептами и находками, и похудели вместе на одинаковое количество килограммов.
+
+      section.order-b
+        .container
+          form.consult-form.consult-form--flat.order-b__consult-form#consult(method = "post", action = "#")
+            h2.consult-form__title Получи #[strong консультацию] прямо #[strong сейчас!]
+
+            .consult-form__wrapper
+              .consult-form__inner
+                input.consult-form__input.consult-form__input(type = "text", name = "name", placeholder = "Ваше имя")
+                input.consult-form__input(type = "tel", name = "phone", placeholder = "Ваш телефон")
+
+              .consult-form__inner
+                input.consult-form__input(type = "text", name = "weight", placeholder = "Вес")
+                input.consult-form__input(type = "text", name = "height", placeholder = "Рост")
+                input.consult-form__input(type = "text", name = "age", placeholder = "Возраст")
+
+              button.btn.btn--type-1.consult-form__btn(type = "submit") Получить консультацию
+
+    footer
+      section.copyright
+        .copyright__text
+          | ООО "Доктор Борменталь"
+          br
+          | Лицензия № ЛО-77-01-006633 от 04.09.2013 г.
+          br
+          | 121059, г. Москва, Украинский бульвар, д. 5
+
+        a.copyright__link(href = "http://cpapartizan.ru/politika.php") Политика конфиденциальности
